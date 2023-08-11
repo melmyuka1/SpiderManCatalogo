@@ -1,0 +1,3900 @@
+@font-face  
+    {
+         font-family:"londrina" ;
+         src: url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100&display=swap');
+    }
+@font-face 
+    {
+         font-family: "isweb";
+         src: url('https://fonts.googleapis.com/css2?family=Istok+Web&display=swap');
+    }
+@font-face 
+    {
+         font-family:"latin" ;
+         src: url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100&display=swap');
+    }   
+@font-face 
+    {
+         font-family:"bee" ;
+         src: url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+    }   
+@font-face 
+    {
+            font-family: "amaranth";
+          src: url("  @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap')");
+    }
+@font-face 
+    {
+        font-family: "fonte2";
+        src: url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+    }
+ @font-face {
+    font-family: "reboto";
+    src: url('https://fonts.googleapis.com/css2?family=Amaranth&family=Nanum+Gothic:wght@400;700&display=swap');
+ }
+    *   
+    {
+         margin: 0px;
+         padding: 0px;
+         box-sizing: border-box;
+         outline:  none
+
+    }
+:root
+     {
+    --vermelho:         #960F15;
+    --azulprincipal:    #1E63CB;
+    --azulsecundario:   #4787e8;
+    --branco:           #FFFFFF;
+    --cinza:            #A59E9E;
+    --vermelhsecundario:#ff5454;
+    --preto:            #000000;
+    --vemelhaum  :      #6C090D;
+    --vermelhobotao:    #A40B12;
+    --azulgrade:        #2670DF;
+    --font-family: 'amaranth';
+    --font-family: 'isweb';
+    --font-family: "reboto";
+
+   
+
+      }
+
+html, body 
+    {
+
+     
+      padding-bottom: 142%;
+       
+       background: var(--azulprincipal);
+     
+     }
+header
+    {
+         width: 100%;
+        height: 270px;
+   
+        background: var(--vermelho);
+
+    }     
+
+.content
+    {
+        max-width: 1000px;
+        min-width: 300px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+nav     
+    {
+        width: 100%;
+        height: 125px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+.brand_vender
+    {
+        font-size: 30px;   
+        color: var(--branco);
+        position: absolute;
+        top: 0%;
+        cursor: pointer; 
+       
+        
+    }
+nav ul li
+    {
+        list-style: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+nav ul li a:hover 
+    {
+        color: #E9302F83;
+    }   
+.brand 
+    {
+        font-size: 24px;
+         color: var(--branco);
+         cursor: pointer;
+    }           
+
+.content .header-block 
+    {
+        max-width: 1000%;
+        min-width: 354px;
+        height: 450px;
+        background: var(--azulsecundario);
+        border-radius: 3px;
+        box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.3) ;
+        position: relative;
+        z-index: 10;
+        padding: 10;
+        
+    }   
+
+.container_spiderpose  
+     {
+        position: absolute;
+        padding-top: 99px;
+        padding-left: 1180px;
+        width: 100px;
+        
+    }
+.brand_vender
+    {
+    font-size: large;
+    }     
+.container_logospider
+     {
+        position: absolute;
+        top: 15%;
+        left: 20px;
+    }
+
+    /* botoes */
+.button1 
+    {
+        position: absolute;   
+        top: 55%;
+        padding-left: 3%;
+        left: 1%;
+        font-size: large;
+        font-family: var(--isweb);
+        color: #FFFFFF;
+        text-decoration: none;
+        background-color: var(--vemelhaum);
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        padding: 0 50px;
+        z-index: 1;
+        overflow: hidden;
+        border-radius: 10px;
+        text-transform: capitalize;
+        overflow: hidden;
+        cursor: pointer;
+        width: 185px;
+    }
+    
+.button1::after,
+.button1::before 
+    {
+        content: '';
+        background-color: var(--vermelhobotao);
+        height: 50%;
+        width: 0;
+        position: absolute;
+        transition: width 0.3s cubic-bezier(0.785, 0.115, 0.15, 0.86);
+        -webkit-transition: width 0.3s cubic-bezier(0.785, 0.115, 0.15, 0.86);
+        z-index: -1;
+    }
+    
+.button1:hover::before 
+    {
+        width: 100%;
+        left: 0;
+        right: auto;
+    }
+    
+.button1::before 
+    {
+        top: 0;
+        left: auto; 
+        right: 0;
+    }
+    
+.button1:hover::after 
+    {
+        width: 100%;
+        left: auto; 
+        right: 0;
+    }
+    
+.button1::after 
+    {
+        bottom: 0;
+        left: 0;
+        right: auto;
+    }
+    
+
+    .button2 
+    {
+        position: absolute;   
+        top: 55%;
+        padding-left: 3%;
+        left: 19%;
+        font-size: large;
+        font-family: var(--isweb);
+        color: #FFFFFF;
+        text-decoration: none;
+        background-color: var(--vemelhaum);
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        padding: 0 50px;
+        z-index: 1;
+        overflow: hidden;
+        border-radius: 10px;
+        text-transform: capitalize;
+        overflow: hidden;
+        cursor: pointer;
+        width: 185px;
+    }
+    
+.button2::after,
+.button2::before 
+    {
+        content: '';
+        background-color: var(--vermelhobotao);
+        height: 50%;
+        width: 0;
+        position: absolute;
+        transition: width 0.3s cubic-bezier(0.785, 0.115, 0.15, 0.86);
+        -webkit-transition: width 0.3s cubic-bezier(0.785, 0.115, 0.15, 0.86);
+        z-index: -1;
+    }
+    
+.button2:hover::before 
+    {
+        width: 100%;
+        left: 0;
+        right: auto;
+    }
+    
+.button2::before 
+    {
+        top: 0;
+        left: auto; 
+        right: 0;
+    }
+    
+.button2:hover::after 
+    {
+        width: 100%;
+        left: auto; 
+        right: 0;
+    }
+    
+.button2::after 
+    {
+        bottom: 0;
+        left: 0;
+        right: auto;
+    }
+    
+/*botao 3*/
+.button3 
+{
+    position: absolute;   
+    top: 55%;
+    padding-left: 3%;
+    left: 37%;
+    font-size: large;
+    font-family: var(--isweb);
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: var(--vemelhaum);
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    padding: 0 50px;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 10px;
+    text-transform: capitalize;
+    overflow: hidden;
+    cursor: pointer;
+    width: 185px;
+}
+
+.button3::after,
+.button3::before 
+{
+    content: '';
+    background-color: var(--vermelhobotao);
+    height: 55%;
+    width: 0;
+    position: absolute;
+    transition: width 0.3s cubic-bezier(0.785, 0.115, 0.15, 0.86);
+    -webkit-transition: width 0.3s cubic-bezier(0.785, 0.115, 0.15, 0.86);
+    z-index: -1;
+}
+
+.button3:hover::before 
+{
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
+.button3::before 
+{
+    top: 0;
+    left: auto; 
+    right: 0;
+}
+
+.button3:hover::after 
+{
+    width: 100%;
+    left: auto; 
+    right: 0;
+}
+
+.button3::after 
+{
+    bottom: 0;
+    left: 0;
+    right: auto;
+}
+
+/* botao4*/
+.button4 
+{
+    position: absolute;   
+    top: 55%;
+    padding-left: 3%;
+    left: 55%;
+    font-size: large;
+    font-family: var(--isweb);
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: var(--vemelhaum);
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    padding: 0 50px;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 10px;
+    text-transform: capitalize;
+    overflow: hidden;
+    cursor: pointer;
+    width: 185px;
+}
+
+.button4::after,
+.button4::before 
+{
+    content: '';
+    background-color: var(--vermelhobotao);
+    height: 50%;
+    width: 0;
+    position: absolute;
+    transition: width 0.3s cubic-bezier(0.785, 0.115, 0.15, 0.86);
+    -webkit-transition: width 0.3s cubic-bezier(0.785, 0.115, 0.15, 0.86);
+    z-index: -1;
+}
+
+.button4:hover::before 
+{
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
+.button4::before 
+{
+    top: 0;
+    left: auto; 
+    right: 0;
+}
+
+.button4:hover::after 
+{
+    width: 100%;
+    left: auto; 
+    right: 0;
+}
+
+.button5::after 
+{
+    bottom: 0;
+    left: 0;
+    right: auto;
+}
+/* botão 5*/
+.button5 
+{
+    position: absolute;   
+    top: 55%;
+    padding-left: 3%;
+    left: 73%;
+    font-size: large;
+    font-family: var(--isweb);
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: var(--vemelhaum);
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    padding: 0 50px;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 10px;
+    text-transform: capitalize;
+    overflow: hidden;
+    cursor: pointer;
+    width: 185px;
+}
+
+.button5::after,
+.button5::before 
+{
+    content: '';
+    background-color: var(--vermelhobotao);
+    height: 50%;
+    width: 0;
+    position: absolute;
+    transition: width 0.3s cubic-bezier(0.785, 0.115, 0.15, 0.86);
+    -webkit-transition: width 0.3s cubic-bezier(0.785, 0.115, 0.15, 0.86);
+    z-index: -1;
+}
+
+.button5:hover::before 
+    {
+    width: 100%;
+    left: 0;
+    right: auto;
+    }
+
+.button5::before 
+{
+    top: 0;
+    left: auto; 
+    right: 0;
+}
+
+.button5:hover::after 
+{
+    width: 100%;
+    left: auto; 
+    right: 0;
+}
+
+.button5::after 
+{
+    bottom: 0;
+    left: 0;
+    right: auto;
+}
+
+/* barra de pesquisa */
+.search-bar {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 5px;
+    width: 480px;
+    left: 60%;
+    top: 18%;
+  }
+  
+.search-bar input
+     {
+          flex: 1;
+         border: none;
+          outline: none;
+          background: transparent;
+     }
+  
+.search-button 
+    {
+        background-color: var(--vermelho);
+         border: none;
+         cursor: pointer;
+         padding: 5px;
+     }
+  
+.search-button i
+     {
+          font-size: 20px;
+        color: #FFFFFF;
+     }
+  
+  .search-button:hover, .search-button:active
+     {
+    animation: glow 0.5s ease-in-out infinite alternate;
+     }
+  
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 5px rgba(199, 5, 5, 0.8);
+    }
+    to {
+      box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+    }
+  }
+
+  /* carrinho de compras*/
+  .shopping-cart-icon 
+    {
+    font-size: 35px;
+    color: #FFFFFF; 
+    cursor: pointer; 
+    position: absolute;
+    left: 94%;
+    top: 10px;
+    }
+
+    /* Itens Cabeçario */
+ .cadastroheader
+    {
+        font-size: large;
+        color: #FFFFFF;
+        position: absolute;
+        left: 85%;
+        top: 31%;
+        cursor: pointer; 
+        transition: background-color 0.3s, transform 0.3s;
+    }
+.cadastroheader:hover
+    {
+        text-emphasis-color: var(--vermelhobotao);
+        transform: scale(1.05);
+    }    
+
+.spiderpose
+    {
+        position: absolute;
+        left: 81%;
+        top: 45%;
+        width: 340px;
+        cursor: pointer; 
+    }
+.peters3
+    {
+        position: absolute;
+        width: 350px;
+        top: 10%;
+        left: 33%;
+        cursor: pointer; 
+    }   
+.millesheader
+    {
+        width: 229px;
+        position: absolute;
+        top: 0%;
+        left: 64%;
+        cursor: pointer; 
+    }
+
+    /* itens body */
+.redinha
+    {
+        position: absolute;
+        width: 1500px;
+        height: 240;
+        top: 73%;
+    }
+
+    /* cards antes do footer 1*/
+    .card {
+        position: absolute;
+        width: 250px;
+        height: 340px;
+        left: 2.8%;
+        top: 125%;
+        background-image: radial-gradient(var(--azulsecundario), var(--azulgrade));
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+    
+.card:hover 
+    {
+        transform: scale(1.05);
+    }
+    
+.card-content
+     {
+        padding: 20px;
+      }
+    
+.card-title 
+    {
+        font-size: 24px;
+        margin: 0;
+        text-align: center;
+    }
+    
+.card-text
+     {
+        color: #f2f2f2;
+        font-size: 13px;
+       position: relative;
+       top: 197.2px;
+        text-align: center;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }
+    
+.card-text p 
+    {
+        align-self: flex-end; 
+        text-align: center;
+    }
+.card-text1
+    {
+        text-align: center;
+        color: var(--branco);
+        font-size: 9px;
+        top: 200.5px;
+        position: relative;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }
+    .compre1 {
+        position: absolute;   
+        top: 85%;
+        left: 22%;
+        font-size: large;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #FFFFFF;
+        text-decoration: none;
+        background-color: var(--vemelhaum);
+        height: 30px;
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        z-index: 1;
+        overflow: hidden;
+        border-radius: 10px;
+        text-transform: capitalize;
+        cursor: pointer;
+        width: 135px;
+        text-align: center;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    
+.compre1:hover
+     {
+        background-color: var(--vermelhobotao);
+        transform: scale(1.05);
+    }
+.VALORP
+    {
+        color: #f2f2f2;
+        font-size: 13px;
+       position: relative;
+       top: 197.5px;
+        text-align: center;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }    
+.parcelas
+    {
+        color: #f2f2f2;
+        font-size: 8px;
+       position: relative;
+       top: 200px;
+        text-align: center;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    } 
+.comicbook
+    {
+        position: absolute;
+        width: 135px;
+        top: 32%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: transform 0.3s; 
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+    }       
+.comicbook:hover    
+    {
+        transform: translate(-50%, -50%) scale(1.2);
+    } 
+
+    .card2 {
+        position: absolute;
+        width: 250px;
+        height: 340px;
+        left: 22.5%;
+        top: 125%;
+        background-image: radial-gradient(var(--azulsecundario), var(--azulgrade));
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+    
+.card2:hover
+    {
+        transform: scale(1.05);
+    }
+    
+.card-content2
+     {
+        padding: 20px;
+        
+      }
+    
+.card-title2
+    {
+        font-size: 24px;
+        margin: 0;
+        text-align: center;
+        font-weight: lighter;
+    }
+    
+.card-text2
+     {
+        color: #f2f2f2;
+        font-size: 13px;
+       position: relative;
+       top: 197.2px;
+        text-align: center;
+        font-weight: lighter;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }
+    
+.card-text2 p 
+    {
+        align-self: flex-end; 
+        text-align: center;
+        font-weight: lighter;
+    }
+.card-text2
+    {
+        text-align: center;
+        color: var(--branco);
+        font-size: 12px;
+        top: 200.5px;
+        position: relative;
+        font-weight: lighter;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }
+    .compre2 {
+        position: absolute;   
+        top: 85%;
+        left: 22%;
+        font-size: large;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #FFFFFF;
+        text-decoration: none;
+        background-color: var(--vemelhaum);
+        height: 30px;
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        z-index: 1;
+        overflow: hidden;
+        border-radius: 10px;
+        text-transform: capitalize;
+        cursor: pointer;
+        width: 135px;
+        text-align: center;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    
+.compre2:hover
+     {
+        background-color: var(--vermelhobotao);
+        transform: scale(1.05);
+    }
+.VALORP2
+    {
+        color: #f2f2f2;
+        font-size: 13px;
+       position: relative;
+       top: 197.5px;
+        text-align: center;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }    
+.parcelas2
+    {
+        color: #f2f2f2;
+        font-size: 8px;
+       position: relative;
+       top: 200px;
+        text-align: center;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    } 
+.casacofoda
+    {
+        position: absolute;
+        width: 135px;
+        top: 32%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: transform 0.3s; 
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+    }       
+.casacofoda:hover    
+    {
+        transform: translate(-50%, -50%) scale(1.2);
+    }    
+    
+    
+
+
+    .card3 {
+        position: absolute;
+        width: 250px;
+        height: 340px;
+        left:41.8%;
+        top: 125%;
+        background-image: radial-gradient(var(--azulsecundario), var(--azulgrade));
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+    
+.card3:hover
+    {
+        transform: scale(1.05);
+    }
+    
+.card-content3
+     {
+        padding: 20px;
+      }
+    
+.card-title3
+    {
+        font-size: 24px;
+        margin: 0;
+        text-align: center;
+        font-weight: lighter;
+    }
+    
+.card-text3
+     {
+        color: #f2f2f2;
+        font-size: 13px;
+       position: relative;
+       top: 197.2px;
+        text-align: center;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: lighter;
+    }
+    
+.card-text3 p 
+    {
+        align-self: flex-end; 
+        text-align: center;
+        font-weight: lighter;
+    }
+.card-text3
+    {
+        text-align: center;
+        color: var(--branco);
+        font-size: 12px;
+        top: 200.5px;
+        position: relative;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: lighter;
+    }
+    .compre3 {
+        position: absolute;   
+        top: 85%;
+        left: 22%;
+        font-size: large;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #FFFFFF;
+        text-decoration: none;
+        background-color: var(--vemelhaum);
+        height: 30px;
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        z-index: 1;
+        overflow: hidden;
+        border-radius: 10px;
+        text-transform: capitalize;
+        cursor: pointer;
+        width: 135px;
+        text-align: center;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    
+.compre3:hover
+     {
+        background-color: var(--vermelhobotao);
+        transform: scale(1.05);
+    }
+.VALORP3
+    {
+        color: #f2f2f2;
+        font-size: 13px;
+       position: relative;
+       top: 197.8px;
+        text-align: center;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }    
+.parcelas3
+    {
+        color: #f2f2f2;
+        font-size: 8px;
+       position: relative;
+       top: 200px;
+        text-align: center;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    } 
+.cardimage3
+    {
+        position: absolute;
+        width: 135px;
+        top: 32%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: transform 0.3s; 
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+    }       
+.cardimage3:hover    
+    {
+        transform: translate(-50%, -50%) scale(1.2);
+    }      
+
+
+
+    .card4
+     {
+        position: absolute;
+        width: 250px;
+        height: 340px;
+        left: 61%;
+        top: 125%;
+        background-image: radial-gradient(var(--azulsecundario), var(--azulgrade));
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+.card4:hover 
+    {
+        transform: scale(1.05);
+    }
+    
+.card-content4
+     {
+        padding: 20px;
+      }
+    
+.card-title4 
+    {
+        color: #f2f2f2;
+        font-size: 13px;
+        font-weight: lighter;
+       position: relative;
+       top: 197.2px;
+        text-align: center;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }
+    
+.card-text4
+     {
+        color: #f2f2f2;
+        font-size: 18px;
+       position: relative;
+       top: 180.2px;
+        text-align: center;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }
+    
+.card-text4 p 
+    {
+        align-self: flex-end; 
+        text-align: center;
+        color: #f2f2f2;
+        font-size: 20px;
+       position: relative;
+       top: 191.2px;
+        text-align: center;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }
+.card-text4
+    {
+        text-align: center;
+        color: var(--branco);
+        font-size: 9px;
+        top: 201.5px;
+        position: relative;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }
+    .compre4 {
+        position: absolute;   
+        top: 85%;
+        left: 22%;
+        font-size: large;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #FFFFFF;
+        text-decoration: none;
+        background-color: var(--vemelhaum);
+        height: 30px;
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        z-index: 1;
+        overflow: hidden;
+        border-radius: 10px;
+        text-transform: capitalize;
+        cursor: pointer;
+        width: 135px;
+        text-align: center;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    
+.compre4:hover
+     {
+        background-color: var(--vermelhobotao);
+        transform: scale(1.05);
+    }
+.VALORP4
+    {
+        color: #f2f2f2;
+        font-size: 13px;
+       position: relative;
+       top: 215px;
+        text-align: center;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }    
+.parcelas4
+    {
+        color: #f2f2f2;
+        font-size: 8px;
+       position: relative;
+       top: 218.5px;
+        text-align: center;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    } 
+.cardimage4
+    {
+        position: absolute;
+        width: 135px;
+        top: 32%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: transform 0.3s; 
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+    }       
+.cardimage4:hover    
+    {
+        transform: translate(-50%, -50%) scale(1.2);
+    }       
+    
+    
+.card5
+    {
+        position: absolute;
+        width: 250px;
+        height: 340px;
+        left: 80.5%;
+        top: 125%;
+        background-image: radial-gradient(var(--azulsecundario), var(--azulgrade));
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+    
+.card5:hover
+    {
+        transform: scale(1.05);
+    }
+    
+.card-content5
+     {
+        padding: 20px;
+      }
+    
+.card-title5
+    {
+        font-size: 15px;
+        margin: 0;
+        text-align: center;
+        color: #f2f2f2;
+        font-size: 13px;
+       position: relative;
+       top: 197.2px;
+        text-align: center;
+        font-weight: lighter;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+.card-text5
+     {
+        color: #f2f2f2;
+        font-size: 13px;
+       position: relative;
+       top: 1.2px;
+        text-align: center;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }
+    
+.card-text5 p 
+    {
+        align-self: flex-end; 
+        text-align: center;
+    }
+.card-text5
+    {
+        text-align: center;
+        color: var(--branco);
+        font-size: 14px;
+        top: 198.5px;
+        position: relative;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }
+    .compre5 {
+        position: absolute;   
+        top: 85%;
+        left: 22%;
+        font-size: large;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #FFFFFF;
+        text-decoration: none;
+        background-color: var(--vemelhaum);
+        height: 30px;
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        z-index: 1;
+        overflow: hidden;
+        border-radius: 10px;
+        text-transform: capitalize;
+        cursor: pointer;
+        width: 135px;
+        text-align: center;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    
+.compre5:hover
+     {
+        background-color: var(--vermelhobotao);
+        transform: scale(1.05);
+    }
+.VALORP5
+    {
+        color: #f2f2f2;
+        font-size: 13px;
+       position: relative;
+       top: 202.5px;
+        text-align: center;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }    
+.parcelas5
+    {
+        color: #f2f2f2;
+        font-size: 8px;
+       position: relative;
+       top: 208px;
+        text-align: center;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    } 
+.cardimage5
+    {
+        position: absolute;
+        width: 135px;
+        top: 32%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: transform 0.3s; 
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+    }       
+.cardimage5:hover    
+    {
+        transform: translate(-50%, -50%) scale(1.2);
+    }      
+        
+
+    .card6
+     {
+        position: absolute;
+        width: 250px;
+        height: 340px;
+        left: 61%;
+        top: 175%;
+        background-image: radial-gradient(var(--azulsecundario), var(--azulgrade));
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+.card6:hover 
+    {
+        transform: scale(1.05);
+    }
+    
+.card-content6
+     {
+        padding: 20px;
+      }
+    
+.card-title6
+    {
+        font-size: 24px;
+        margin: 0;
+        top:200px;
+        text-align: center;
+    }
+    
+.card-text6
+     {
+        color: #f2f2f2;
+        font-size: 13px;
+       position: relative;
+       top: 197.2px;
+        text-align: center;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }
+    
+.card-text6 p 
+    {
+        align-self: flex-end; 
+        text-align: center;
+    }
+.card-text6
+    {
+        text-align: center;
+        color: var(--branco);
+        font-size: 15px;
+        top: 200.5px;
+        position: relative;
+        font-weight: lighter;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }
+    .compre6{
+        position: absolute;   
+        top: 85%;
+        left: 22%;
+        font-size: large;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #FFFFFF;
+        text-decoration: none;
+        background-color: var(--vemelhaum);
+        height: 30px;
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        z-index: 1;
+        overflow: hidden;
+        border-radius: 10px;
+        text-transform: capitalize;
+        cursor: pointer;
+        width: 135px;
+        text-align: center;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    
+.compre6:hover
+     {
+        background-color: var(--vermelhobotao);
+        transform: scale(1.05);
+    }
+.VALORP6
+    {
+        color: #f2f2f2;
+        font-size: 13px;
+       position: relative;
+       top: 210px;
+        text-align: center;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }    
+.parcelas6
+    {
+        color: #f2f2f2;
+        font-size: 8px;
+       position: relative;
+       top: 219px;
+        text-align: center;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    } 
+.cardimage6
+    {
+        position: absolute;
+        width: 135px;
+        top: 32%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: transform 0.3s; 
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+    }       
+.cardimage6:hover    
+    {
+        transform: translate(-50%, -50%) scale(1.2);
+    }       
+    
+
+    .card7
+     {
+        position: absolute;
+        width: 250px;
+        height: 340px;
+        left: 2.8%;
+        top: 175%;
+        background-image: radial-gradient(var(--azulsecundario), var(--azulgrade));
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+.card7:hover 
+    {
+        transform: scale(1.05);
+    }
+    
+.card-content7
+     {
+        padding: 20px;
+      }
+    
+.card-title7
+    {
+        font-size: 24px;
+        margin: 0;
+        top:200px;
+        text-align: center;
+    }
+    
+.card-text7
+     {
+        color: #f2f2f2;
+        font-size: 24px;
+       position: relative;
+       top: 197.2px;
+        text-align: center;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }
+    
+.card-text7 p 
+    {
+        align-self: flex-end; 
+        text-align: center;
+    }
+.card-text7
+    {
+        text-align: center;
+        color: var(--branco);
+        font-size: 15px;
+        top: 200.5px;
+        position: relative;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: lighter;
+    }
+    .compre7{
+        position: absolute;   
+        top: 85%;
+        left: 22%;
+        font-size: large;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #FFFFFF;
+        text-decoration: none;
+        background-color: var(--vemelhaum);
+        height: 30px;
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        z-index: 1;
+        overflow: hidden;
+        border-radius: 10px;
+        text-transform: capitalize;
+        cursor: pointer;
+        width: 135px;
+        text-align: center;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    
+.compre7:hover
+     {
+        background-color: var(--vermelhobotao);
+        transform: scale(1.05);
+    }
+.VALORP7
+    {
+        color: #f2f2f2;
+        font-size: 13px;
+       position: relative;
+       top: 210px;
+        text-align: center;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }    
+.parcelas7
+    {
+        color: #f2f2f2;
+        font-size: 8px;
+       position: relative;
+       top: 219px;
+        text-align: center;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    } 
+.cardimage7
+    {
+        position: absolute;
+        width: 135px;
+        top: 32%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: transform 0.3s; 
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+    }       
+.cardimage7:hover    
+    {
+        transform: translate(-50%, -50%) scale(1.2);
+    }  
+    .card8
+    {
+       position: absolute;
+       width: 250px;
+       height: 340px;
+       left:41.8%;
+       top: 175%;
+       background-image: radial-gradient(var(--azulsecundario), var(--azulgrade));
+       border-radius: 10px;
+       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+       overflow: hidden;
+       transition: transform 0.3s ease;
+   }
+.card8:hover 
+   {
+       transform: scale(1.05);
+   }
+   
+.card-content8
+    {
+       padding: 20px;
+     }
+   
+.card-title8
+   {
+       font-size: 24px;
+       margin: 0;
+       top:200px;
+       text-align: center;
+   }
+   
+.card-text8
+    {
+       color: #f2f2f2;
+       font-size: 24px;
+      position: relative;
+      top: 197.2px;
+       text-align: center;
+       font-family:Verdana, Geneva, Tahoma, sans-serif
+   }
+   
+.card-text8 p 
+   {
+       align-self: flex-end; 
+       text-align: center;
+   }
+.card-text8
+   {
+       text-align: center;
+       color: var(--branco);
+       font-size: 15px;
+       top: 200.5px;
+       position: relative;
+       font-family:Verdana, Geneva, Tahoma, sans-serif;
+       font-weight: lighter;
+   }
+   .compre8{
+       position: absolute;   
+       top: 85%;
+       left: 22%;
+       font-size: large;
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+       color: #FFFFFF;
+       text-decoration: none;
+       background-color: var(--vemelhaum);
+       height: 30px;
+       display: flex;
+       align-items: center; 
+       justify-content: center; 
+       z-index: 1;
+       overflow: hidden;
+       border-radius: 10px;
+       text-transform: capitalize;
+       cursor: pointer;
+       width: 135px;
+       text-align: center;
+       transition: background-color 0.3s, transform 0.3s;
+   }
+   
+.compre8:hover
+    {
+       background-color: var(--vermelhobotao);
+       transform: scale(1.05);
+   }
+.VALORP8
+   {
+       color: #f2f2f2;
+       font-size: 13px;
+      position: relative;
+      top: 210px;
+       text-align: center;
+       font-family:Verdana, Geneva, Tahoma, sans-serif
+   }    
+.parcelas8
+   {
+       color: #f2f2f2;
+       font-size: 8px;
+      position: relative;
+      top: 219px;
+       text-align: center;
+       font-family:Verdana, Geneva, Tahoma, sans-serif
+   } 
+.cardimage8
+   {
+       position: absolute;
+       width: 135px;
+       top: 32%;
+       left: 50%;
+       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+       transform: translate(-50%, -50%);
+       transition: transform 0.3s; 
+   }       
+.cardimage8:hover    
+   {
+       transform: translate(-50%, -50%) scale(1.2);
+   }               
+   .card9
+   {
+      position: absolute;
+      width: 250px;
+      height: 340px;
+      left: 22.5%;
+      top: 175%;
+      background-image: radial-gradient(var(--azulsecundario), var(--azulgrade));
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+  }
+.card9:hover 
+  {
+      transform: scale(1.05);
+  }
+  
+.card-content9
+   {
+      padding: 20px;
+    }
+  
+.card-title9
+  {
+      font-size: 24px;
+      margin: 0;
+      top:200px;
+      text-align: center;
+  }
+  
+.card-text9
+   {
+      color: #f2f2f2;
+      font-size: 24px;
+     position: relative;
+     top: 197.2px;
+      text-align: center;
+      font-family:Verdana, Geneva, Tahoma, sans-serif
+  }
+  
+.card-text9 p 
+  {
+      align-self: flex-end; 
+      text-align: center;
+  }
+.card-text9
+  {
+      text-align: center;
+      color: var(--branco);
+      font-size: 15px;
+      top: 200.5px;
+      position: relative;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: lighter;
+  }
+  .compre9{
+      position: absolute;   
+      top: 85%;
+      left: 22%;
+      font-size: large;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: #FFFFFF;
+      text-decoration: none;
+      background-color: var(--vemelhaum);
+      height: 30px;
+      display: flex;
+      align-items: center; 
+      justify-content: center; 
+      z-index: 1;
+      overflow: hidden;
+      border-radius: 10px;
+      text-transform: capitalize;
+      cursor: pointer;
+      width: 135px;
+      text-align: center;
+      transition: background-color 0.3s, transform 0.3s;
+  }
+  
+.compre9:hover
+   {
+      background-color: var(--vermelhobotao);
+      transform: scale(1.05);
+  }
+.VALORP9
+  {
+      color: #f2f2f2;
+      font-size: 13px;
+     position: relative;
+     top: 210px;
+      text-align: center;
+      font-family:Verdana, Geneva, Tahoma, sans-serif
+  }    
+.parcelas9
+  {
+      color: #f2f2f2;
+      font-size: 8px;
+     position: relative;
+     top: 219px;
+      text-align: center;
+      font-family:Verdana, Geneva, Tahoma, sans-serif
+  } 
+.cardimage9
+  {
+      position: absolute;
+      width: 135px;
+      top: 32%;
+      left: 50%;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+ border-radius: 8px;
+      transform: translate(-50%, -50%);
+      transition: transform 0.3s; 
+  }       
+.cardimage9:hover    
+  {
+      transform: translate(-50%, -50%) scale(1.2);
+  }    
+  
+  .card10
+  {
+     position: absolute;
+     width: 250px;
+     height: 340px;
+     left: 80.5%;
+     top: 175%;
+     background-image: radial-gradient(var(--azulsecundario), var(--azulgrade));
+     border-radius: 10px;
+     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+     overflow: hidden;
+     transition: transform 0.3s ease;
+ }
+.card10:hover 
+ {
+     transform: scale(1.05);
+ }
+ 
+.card-content10
+  {
+     padding: 20px;
+   }
+ 
+.card-title10
+ {
+     font-size: 24px;
+     margin: 0;
+     top:200px;
+     text-align: center;
+ }
+ 
+.card-text10
+  {
+     color: #f2f2f2;
+     font-size: 24px;
+    position: relative;
+    top: 197.2px;
+     text-align: center;
+     font-family:Verdana, Geneva, Tahoma, sans-serif
+ }
+ 
+.card-text10 p 
+ {
+     align-self: flex-end; 
+     text-align: center;
+ }
+.card-text10
+ {
+     text-align: center;
+     color: var(--branco);
+     font-size: 15px;
+     top: 200.5px;
+     position: relative;
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+     font-weight: lighter;
+ }
+ .compre10{
+     position: absolute;   
+     top: 85%;
+     left: 22%;
+     font-size: large;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     color: #FFFFFF;
+     text-decoration: none;
+     background-color: var(--vemelhaum);
+     height: 30px;
+     display: flex;
+     align-items: center; 
+     justify-content: center; 
+     z-index: 1;
+     overflow: hidden;
+     border-radius: 10px;
+     text-transform: capitalize;
+     cursor: pointer;
+     width: 135px;
+     text-align: center;
+     transition: background-color 0.3s, transform 0.3s;
+ }
+ 
+.compre10:hover
+  {
+     background-color: var(--vermelhobotao);
+     transform: scale(1.05);
+ }
+.VALORP10
+ {
+     color: #f2f2f2;
+     font-size: 13px;
+    position: relative;
+    top: 210px;
+     text-align: center;
+     font-family:Verdana, Geneva, Tahoma, sans-serif
+ }    
+.parcelas10
+ {
+     color: #f2f2f2;
+     font-size: 8px;
+    position: relative;
+    top: 219px;
+     text-align: center;
+     font-family:Verdana, Geneva, Tahoma, sans-serif
+ } 
+.cardimage10
+ {
+     position: absolute;
+     width: 135px;
+     top: 32%;
+     left: 50%;
+     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+border-radius: 8px;
+     transform: translate(-50%, -50%);
+     transition: transform 0.3s; 
+ }       
+.cardimage10:hover    
+ {
+     transform: translate(-50%, -50%) scale(1.2);
+ }               
+ .card11
+    {
+       position: absolute;
+       width: 250px;
+       height: 340px;
+       left: 2.8%;
+       top: 225%;
+       background-image: radial-gradient(var(--azulsecundario), var(--azulgrade));
+       border-radius: 10px;
+       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+       overflow: hidden;
+       transition: transform 0.3s ease;
+   }
+.card11:hover 
+   {
+       transform: scale(1.05);
+   }
+   
+.card-content11
+    {
+       padding: 20px;
+     }
+   
+.card-title11
+   {
+       font-size: 24px;
+       margin: 0;
+       top:200px;
+       text-align: center;
+   }
+   
+.card-text11
+    {
+       color: #f2f2f2;
+       font-size: 24px;
+      position: relative;
+      top: 197.2px;
+       text-align: center;
+       font-family:Verdana, Geneva, Tahoma, sans-serif
+   }
+   
+.card-text11 p 
+   {
+       align-self: flex-end; 
+       text-align: center;
+   }
+.card-text11
+   {
+       text-align: center;
+       color: var(--branco);
+       font-size: 15px;
+       top: 200.5px;
+       position: relative;
+       font-family:Verdana, Geneva, Tahoma, sans-serif;
+       font-weight: lighter;
+   }
+   .compre11
+    {
+       position: absolute;   
+       top: 85%;
+       left: 22%;
+       font-size: large;
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+       color: #FFFFFF;
+       text-decoration: none;
+       background-color: var(--vemelhaum);
+       height: 30px;
+       display: flex;
+       align-items: center; 
+       justify-content: center; 
+       z-index: 1;
+       overflow: hidden;
+       border-radius: 10px;
+       text-transform: capitalize;
+       cursor: pointer;
+       width: 135px;
+       text-align: center;
+       transition: background-color 0.3s, transform 0.3s;
+   }
+   
+.compre11:hover
+    {
+       background-color: var(--vermelhobotao);
+       transform: scale(1.05);
+   }
+.VALORP11
+   {
+       color: #f2f2f2;
+       font-size: 13px;
+      position: relative;
+      top: 210px;
+       text-align: center;
+       font-family:Verdana, Geneva, Tahoma, sans-serif
+   }    
+.parcelas11
+   {
+       color: #f2f2f2;
+       font-size: 8px;
+      position: relative;
+      top: 219px;
+       text-align: center;
+       font-family:Verdana, Geneva, Tahoma, sans-serif
+   } 
+.cardimage11
+   {
+       position: absolute;
+       width: 135px;
+       top: 32%;
+       left: 50%;
+       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+       transform: translate(-50%, -50%);
+       transition: transform 0.3s; 
+   }       
+.cardimage11:hover    
+   {
+       transform: translate(-50%, -50%) scale(1.2);
+   }               
+    
+   .card12
+   {
+      position: absolute;
+      width: 250px;
+      height: 340px;
+      left:22.5%;
+      top: 225%;
+      background-image: radial-gradient(var(--azulsecundario), var(--azulgrade));
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+  }
+.card12:hover 
+  {
+      transform: scale(1.05);
+  }
+  
+.card-content12
+   {
+      padding: 20px;
+    }
+  
+.card-title12
+  {
+      font-size: 24px;
+      margin: 0;
+      top:200px;
+      text-align: center;
+  }
+  
+.card-text12
+   {
+      color: #f2f2f2;
+      font-size: 24px;
+     position: relative;
+     top: 197.2px;
+      text-align: center;
+      font-family:Verdana, Geneva, Tahoma, sans-serif
+  }
+  
+.card-text12 p 
+  {
+      align-self: flex-end; 
+      text-align: center;
+  }
+.card-text12
+  {
+      text-align: center;
+      color: var(--branco);
+      font-size: 15px;
+      top: 200.5px;
+      position: relative;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: lighter;
+  }
+  .compre12
+   {
+      position: absolute;   
+      top: 85%;
+      left: 22%;
+      font-size: large;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: #FFFFFF;
+      text-decoration: none;
+      background-color: var(--vemelhaum);
+      height: 30px;
+      display: flex;
+      align-items: center; 
+      justify-content: center; 
+      z-index: 1;
+      overflow: hidden;
+      border-radius: 10px;
+      text-transform: capitalize;
+      cursor: pointer;
+      width: 135px;
+      text-align: center;
+      transition: background-color 0.3s, transform 0.3s;
+  }
+  
+.compre12:hover
+   {
+      background-color: var(--vermelhobotao);
+      transform: scale(1.05);
+  }
+.VALORP12
+  {
+      color: #f2f2f2;
+      font-size: 13px;
+     position: relative;
+     top: 210px;
+      text-align: center;
+      font-family:Verdana, Geneva, Tahoma, sans-serif
+  }    
+.parcelas12
+  {
+      color: #f2f2f2;
+      font-size: 8px;
+     position: relative;
+     top: 219px;
+      text-align: center;
+      font-family:Verdana, Geneva, Tahoma, sans-serif
+  } 
+.cardimage12
+  {
+      position: absolute;
+      width: 135px;
+      top: 32%;
+      left: 50%;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+ border-radius: 8px;
+      transform: translate(-50%, -50%);
+      transition: transform 0.3s; 
+  }       
+.cardimage12:hover    
+  {
+      transform: translate(-50%, -50%) scale(1.2);
+  }               
+  .card13
+  {
+     position: absolute;
+     width: 250px;
+     height: 340px;
+     left:41.8%;
+     top: 225%;
+     background-image: radial-gradient(var(--azulsecundario), var(--azulgrade));
+     border-radius: 10px;
+     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+     overflow: hidden;
+     transition: transform 0.3s ease;
+ }
+.card13:hover 
+ {
+     transform: scale(1.05);
+ }
+ 
+.card-content13
+  {
+     padding: 20px;
+   }
+ 
+.card-title13
+ {
+     font-size: 24px;
+     margin: 0;
+     top:200px;
+     text-align: center;
+ }
+ 
+.card-text13
+  {
+     color: #f2f2f2;
+     font-size: 24px;
+    position: relative;
+    top: 197.2px;
+     text-align: center;
+     font-family:Verdana, Geneva, Tahoma, sans-serif
+ }
+ 
+.card-text13 p 
+ {
+     align-self: flex-end; 
+     text-align: center;
+ }
+.card-text13
+ {
+     text-align: center;
+     color: var(--branco);
+     font-size: 15px;
+     top: 200.5px;
+     position: relative;
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+     font-weight: lighter;
+ }
+ .compre13
+  {
+     position: absolute;   
+     top: 85%;
+     left: 22%;
+     font-size: large;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     color: #FFFFFF;
+     text-decoration: none;
+     background-color: var(--vemelhaum);
+     height: 30px;
+     display: flex;
+     align-items: center; 
+     justify-content: center; 
+     z-index: 1;
+     overflow: hidden;
+     border-radius: 10px;
+     text-transform: capitalize;
+     cursor: pointer;
+     width: 135px;
+     text-align: center;
+     transition: background-color 0.3s, transform 0.3s;
+ }
+ 
+.compre13:hover
+  {
+     background-color: var(--vermelhobotao);
+     transform: scale(1.05);
+ }
+.VALORP13
+ {
+     color: #f2f2f2;
+     font-size: 13px;
+    position: relative;
+    top: 210px;
+     text-align: center;
+     font-family:Verdana, Geneva, Tahoma, sans-serif
+ }    
+.parcelas13
+ {
+     color: #f2f2f2;
+     font-size: 8px;
+    position: relative;
+    top: 219px;
+     text-align: center;
+     font-family:Verdana, Geneva, Tahoma, sans-serif
+ } 
+.cardimage13
+ {
+     position: absolute;
+     width: 135px;
+     top: 32%;
+     left: 50%;
+     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+border-radius: 8px;
+     transform: translate(-50%, -50%);
+     transition: transform 0.3s; 
+ }
+.cardimage13:hover    
+ {
+     transform: translate(-50%, -50%) scale(1.2);
+ }      
+ .card14
+ {
+    position: absolute;
+    width: 250px;
+    height: 340px;
+    left: 61%;
+    
+    top: 225%;
+    background-image: radial-gradient(var(--azulsecundario), var(--azulgrade));
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.card14:hover 
+{
+    transform: scale(1.05);
+}
+
+.card-content14
+ {
+    padding: 20px;
+  }
+
+.card-title14
+{
+    font-size: 24px;
+    margin: 0;
+    top:200px;
+    text-align: center;
+}
+
+.card-text14
+ {
+    color: #f2f2f2;
+    font-size: 24px;
+   position: relative;
+   top: 197.2px;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.card-text14 p 
+{
+    align-self: flex-end; 
+    text-align: center;
+}
+.card-text14
+{
+    text-align: center;
+    color: var(--branco);
+    font-size: 15px;
+    top: 200.5px;
+    position: relative;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+}
+.compre14
+ {
+    position: absolute;   
+    top: 85%;
+    left: 22%;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: var(--vemelhaum);
+    height: 30px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+    width: 135px;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.compre14:hover
+ {
+    background-color: var(--vermelhobotao);
+    transform: scale(1.05);
+}
+.VALORP14
+{
+    color: #f2f2f2;
+    font-size: 13px;
+   position: relative;
+   top: 210px;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}    
+.parcelas14
+{
+    color: #f2f2f2;
+    font-size: 8px;
+   position: relative;
+   top: 219px;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+} 
+.cardimage14
+{
+    position: absolute;
+    width: 135px;
+    top: 32%;
+    left: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+border-radius: 8px;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s; 
+}       
+.cardimage14:hover    
+{
+    transform: translate(-50%, -50%) scale(1.2);
+}               
+.card15
+   {
+      position: absolute;
+      width: 250px;
+      height: 340px;
+      left: 80.5%;
+      top: 225%;
+      background-image: radial-gradient(var(--azulsecundario), var(--azulgrade));
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+  }
+.card15:hover 
+  {
+      transform: scale(1.05);
+  }
+  
+.card-content15
+   {
+      padding: 20px;
+    }
+  
+.card-title15
+  {
+      font-size: 24px;
+      margin: 0;
+      top:200px;
+      text-align: center;
+  }
+  
+.card-text15
+   {
+      color: #f2f2f2;
+      font-size: 24px;
+     position: relative;
+     top: 197.2px;
+      text-align: center;
+      font-family:Verdana, Geneva, Tahoma, sans-serif
+  }
+  
+.card-text15 p 
+  {
+      align-self: flex-end; 
+      text-align: center;
+  }
+.card-text15
+  {
+      text-align: center;
+      color: var(--branco);
+      font-size: 15px;
+      top: 200.5px;
+      position: relative;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: lighter;
+  }
+  .compre15
+   {
+      position: absolute;   
+      top: 85%;
+      left: 22%;
+      font-size: large;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: #FFFFFF;
+      text-decoration: none;
+      background-color: var(--vemelhaum);
+      height: 30px;
+      display: flex;
+      align-items: center; 
+      justify-content: center; 
+      z-index: 1;
+      overflow: hidden;
+      border-radius: 10px;
+      text-transform: capitalize;
+      cursor: pointer;
+      width: 135px;
+      text-align: center;
+      transition: background-color 0.3s, transform 0.3s;
+  }
+  
+.compre15:hover
+   {
+      background-color: var(--vermelhobotao);
+      transform: scale(1.05);
+  }
+.VALORP15
+  {
+      color: #f2f2f2;
+      font-size: 13px;
+     position: relative;
+     top: 210px;
+      text-align: center;
+      font-family:Verdana, Geneva, Tahoma, sans-serif
+  }    
+.parcelas15
+  {
+      color: #f2f2f2;
+      font-size: 8px;
+     position: relative;
+     top: 219px;
+      text-align: center;
+      font-family:Verdana, Geneva, Tahoma, sans-serif
+  } 
+.cardimage15
+  {
+      position: absolute;
+      width: 135px;
+      top: 32%;
+      left: 50%;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+ border-radius: 8px;
+      transform: translate(-50%, -50%);
+      transition: transform 0.3s; 
+  }       
+.cardimage15:hover    
+  {
+      transform: translate(-50%, -50%) scale(1.2);
+  }               
+   
+ 
+  .card16
+  {
+     position: absolute;
+     width: 250px;
+     height: 340px;
+     left: 2.8%;
+     top: 275%;
+     background-image: radial-gradient(var(--azulsecundario), var(--azulgrade));
+     border-radius: 10px;
+     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+     overflow: hidden;
+     transition: transform 0.3s ease;
+ }
+.card16:hover 
+ {
+     transform: scale(1.05);
+ }
+ 
+.card-content16
+  {
+     padding: 20px;
+   }
+ 
+.card-title16
+ {
+     font-size: 24px;
+     margin: 0;
+     top:200px;
+     text-align: center;
+ }
+ 
+.card-text16
+  {
+     color: #f2f2f2;
+     font-size: 24px;
+    position: relative;
+    top: 197.2px;
+     text-align: center;
+     font-family:Verdana, Geneva, Tahoma, sans-serif
+ }
+ 
+.card-text16 p 
+ {
+     align-self: flex-end; 
+     text-align: center;
+ }
+.card-text16
+ {
+     text-align: center;
+     color: var(--branco);
+     font-size: 15px;
+     top: 200.5px;
+     position: relative;
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+     font-weight: lighter;
+ }
+ .compre16
+  {
+     position: absolute;   
+     top: 85%;
+     left: 22%;
+     font-size: large;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     color: #FFFFFF;
+     text-decoration: none;
+     background-color: var(--vemelhaum);
+     height: 30px;
+     display: flex;
+     align-items: center; 
+     justify-content: center; 
+     z-index: 1;
+     overflow: hidden;
+     border-radius: 10px;
+     text-transform: capitalize;
+     cursor: pointer;
+     width: 135px;
+     text-align: center;
+     transition: background-color 0.3s, transform 0.3s;
+ }
+ 
+.compre16:hover
+  {
+     background-color: var(--vermelhobotao);
+     transform: scale(1.05);
+ }
+.VALORP16
+ {
+     color: #f2f2f2;
+     font-size: 13px;
+    position: relative;
+    top: 210px;
+     text-align: center;
+     font-family:Verdana, Geneva, Tahoma, sans-serif
+ }    
+.parcelas16
+ {
+     color: #f2f2f2;
+     font-size: 8px;
+    position: relative;
+    top: 219px;
+     text-align: center;
+     font-family:Verdana, Geneva, Tahoma, sans-serif
+ } 
+.cardimage16
+ {
+     position: absolute;
+     width: 135px;
+     top: 32%;
+     left: 50%;
+     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+border-radius: 8px;
+     transform: translate(-50%, -50%);
+     transition: transform 0.3s; 
+ }       
+.cardimage16:hover    
+ {
+     transform: translate(-50%, -50%) scale(1.2);
+ }     
+ .card17
+ {
+    position: absolute;
+    width: 250px;
+    height: 340px;
+    left:22.5%;
+    top: 275%;
+    background-image: radial-gradient(var(--azulsecundario), var(--azulgrade));
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.card17:hover 
+{
+    transform: scale(1.05);
+}
+
+.card-content17
+ {
+    padding: 20px;
+  }
+
+.card-title17
+{
+    font-size: 24px;
+    margin: 0;
+    top:200px;
+    text-align: center;
+}
+
+.card-text17
+ {
+    color: #f2f2f2;
+    font-size: 24px;
+   position: relative;
+   top: 197.2px;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.card-text17 p 
+{
+    align-self: flex-end; 
+    text-align: center;
+}
+.card-text17
+{
+    text-align: center;
+    color: var(--branco);
+    font-size: 15px;
+    top: 200.5px;
+    position: relative;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+}
+.compre17
+ {
+    position: absolute;   
+    top: 85%;
+    left: 22%;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: var(--vemelhaum);
+    height: 30px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+    width: 135px;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.compre17:hover
+ {
+    background-color: var(--vermelhobotao);
+    transform: scale(1.05);
+}
+.VALORP17
+{
+    color: #f2f2f2;
+    font-size: 13px;
+   position: relative;
+   top: 210px;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}    
+.parcelas17
+{
+    color: #f2f2f2;
+    font-size: 8px;
+   position: relative;
+   top: 219px;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+} 
+.cardimage17
+{
+    position: absolute;
+    width: 135px;
+    top: 32%;
+    left: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+border-radius: 8px;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s; 
+}       
+.cardimage17:hover    
+{
+    transform: translate(-50%, -50%) scale(1.2);
+}       
+
+.card18
+  {
+     position: absolute;
+     width: 250px;
+     height: 340px;
+     left:41.8%;
+     top: 275%;
+     background-image: radial-gradient(var(--azulsecundario), var(--azulgrade));
+     border-radius: 10px;
+     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+     overflow: hidden;
+     transition: transform 0.3s ease;
+ }
+.card18:hover 
+ {
+     transform: scale(1.05);
+ }
+ 
+.card-content18
+  {
+     padding: 20px;
+   }
+ 
+.card-title18
+ {
+     font-size: 24px;
+     margin: 0;
+     top:200px;
+     text-align: center;
+ }
+ 
+.card-text18
+  {
+     color: #f2f2f2;
+     font-size: 24px;
+    position: relative;
+    top: 197.2px;
+     text-align: center;
+     font-family:Verdana, Geneva, Tahoma, sans-serif
+ }
+ 
+.card-text18 p 
+ {
+     align-self: flex-end; 
+     text-align: center;
+ }
+.card-text18
+ {
+     text-align: center;
+     color: var(--branco);
+     font-size: 15px;
+     top: 200.5px;
+     position: relative;
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+     font-weight: lighter;
+ }
+ .compre18
+  {
+     position: absolute;   
+     top: 85%;
+     left: 22%;
+     font-size: large;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     color: #FFFFFF;
+     text-decoration: none;
+     background-color: var(--vemelhaum);
+     height: 30px;
+     display: flex;
+     align-items: center; 
+     justify-content: center; 
+     z-index: 1;
+     overflow: hidden;
+     border-radius: 10px;
+     text-transform: capitalize;
+     cursor: pointer;
+     width: 135px;
+     text-align: center;
+     transition: background-color 0.3s, transform 0.3s;
+ }
+ 
+.compre18:hover
+  {
+     background-color: var(--vermelhobotao);
+     transform: scale(1.05);
+ }
+.VALORP18
+ {
+     color: #f2f2f2;
+     font-size: 13px;
+    position: relative;
+    top: 210px;
+     text-align: center;
+     font-family:Verdana, Geneva, Tahoma, sans-serif
+ }    
+.parcelas18
+ {
+     color: #f2f2f2;
+     font-size: 8px;
+    position: relative;
+    top: 219px;
+     text-align: center;
+     font-family:Verdana, Geneva, Tahoma, sans-serif
+ } 
+.cardimage18
+ {
+     position: absolute;
+     width: 135px;
+     top: 32%;
+     left: 50%;
+     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+border-radius: 8px;
+     transform: translate(-50%, -50%);
+     transition: transform 0.3s; 
+ }       
+.cardimage18:hover    
+ {
+     transform: translate(-50%, -50%) scale(1.2);
+ }     
+ .card19
+  {
+     position: absolute;
+     width: 250px;
+     height: 340px;
+     left: 61%;
+     top: 275%;
+     background-image: radial-gradient(var(--azulsecundario), var(--azulgrade));
+     border-radius: 10px;
+     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+     overflow: hidden;
+     transition: transform 0.3s ease;
+ }
+.card19:hover 
+ {
+     transform: scale(1.05);
+ }
+ 
+.card-content19
+  {
+     padding: 20px;
+   }
+ 
+.card-title19
+ {
+     font-size: 24px;
+     margin: 0;
+     top:200px;
+     text-align: center;
+ }
+ 
+.card-text19
+  {
+     color: #f2f2f2;
+     font-size: 24px;
+    position: relative;
+    top: 197.2px;
+     text-align: center;
+     font-family:Verdana, Geneva, Tahoma, sans-serif
+ }
+ 
+.card-text19 p 
+ {
+     align-self: flex-end; 
+     text-align: center;
+ }
+.card-text19
+ {
+     text-align: center;
+     color: var(--branco);
+     font-size: 15px;
+     top: 200.5px;
+     position: relative;
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+     font-weight: lighter;
+ }
+ .compre19
+  {
+     position: absolute;   
+     top: 85%;
+     left: 22%;
+     font-size: large;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     color: #FFFFFF;
+     text-decoration: none;
+     background-color: var(--vemelhaum);
+     height: 30px;
+     display: flex;
+     align-items: center; 
+     justify-content: center; 
+     z-index: 1;
+     overflow: hidden;
+     border-radius: 10px;
+     text-transform: capitalize;
+     cursor: pointer;
+     width: 135px;
+     text-align: center;
+     transition: background-color 0.3s, transform 0.3s;
+ }
+ 
+.compre19:hover
+  {
+     background-color: var(--vermelhobotao);
+     transform: scale(1.05);
+ }
+.VALORP19
+ {
+     color: #f2f2f2;
+     font-size: 13px;
+    position: relative;
+    top: 210px;
+     text-align: center;
+     font-family:Verdana, Geneva, Tahoma, sans-serif
+ }    
+.parcelas19
+ {
+     color: #f2f2f2;
+     font-size: 8px;
+    position: relative;
+    top: 219px;
+     text-align: center;
+     font-family:Verdana, Geneva, Tahoma, sans-serif
+ } 
+.cardimage19
+ {
+     position: absolute;
+     width: 135px;
+     top: 32%;
+     left: 50%;
+     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+border-radius: 8px;
+     transform: translate(-50%, -50%);
+     transition: transform 0.3s; 
+ }       
+.cardimage19:hover    
+ {
+     transform: translate(-50%, -50%) scale(1.2);
+ }     
+
+ .card20
+ {
+    position: absolute;
+    width: 250px;
+    height: 340px;
+    left: 80.5%;
+    top: 275%;
+    background-image: radial-gradient(var(--azulsecundario), var(--azulgrade));
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.card20:hover 
+{
+    transform: scale(1.05);
+}
+
+.card-content20
+ {
+    padding: 20px;
+  }
+
+.card-title20
+{
+    font-size: 24px;
+    margin: 0;
+    top:200px;
+    text-align: center;
+}
+
+.card-text20
+ {
+    color: #f2f2f2;
+    font-size: 24px;
+   position: relative;
+   top: 197.2px;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.card-text20 p 
+{
+    align-self: flex-end; 
+    text-align: center;
+}
+.card-text20
+{
+    text-align: center;
+    color: var(--branco);
+    font-size: 15px;
+    top: 200.5px;
+    position: relative;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+}
+.compre20
+ {
+    position: absolute;   
+    top: 85%;
+    left: 22%;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: var(--vemelhaum);
+    height: 30px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+    width: 135px;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.compre20:hover
+ {
+    background-color: var(--vermelhobotao);
+    transform: scale(1.05);
+}
+.VALORP20
+{
+    color: #f2f2f2;
+    font-size: 13px;
+   position: relative;
+   top: 210px;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}    
+.parcelas20
+{
+    color: #f2f2f2;
+    font-size: 8px;
+   position: relative;
+   top: 219px;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+} 
+.cardimage20
+{
+    position: absolute;
+    width: 135px;
+    top: 32%;
+    left: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+border-radius: 8px;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s; 
+}       
+.cardimage20:hover    
+{
+    transform: translate(-50%, -50%) scale(1.2);
+}     
+
+.card21
+{
+   position: absolute;
+   width: 250px;
+   height: 340px;
+   left: 2.8%;
+   top: 325%;
+   background-image: radial-gradient(var(--azulsecundario), var(--azulgrade));
+   border-radius: 10px;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+   overflow: hidden;
+   transition: transform 0.3s ease;
+}
+.card21:hover 
+{
+   transform: scale(1.05);
+}
+
+.card-content21
+{
+   padding: 20px;
+ }
+
+.card-title21
+{
+   font-size: 24px;
+   margin: 0;
+   top:200px;
+   text-align: center;
+}
+
+.card-text21
+{
+   color: #f2f2f2;
+   font-size: 24px;
+  position: relative;
+  top: 197.2px;
+   text-align: center;
+   font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.card-text21 p 
+{
+   align-self: flex-end; 
+   text-align: center;
+}
+.card-text21
+{
+   text-align: center;
+   color: var(--branco);
+   font-size: 15px;
+   top: 200.5px;
+   position: relative;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   font-weight: lighter;
+}
+.compre21
+{
+   position: absolute;   
+   top: 85%;
+   left: 22%;
+   font-size: large;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   color: #FFFFFF;
+   text-decoration: none;
+   background-color: var(--vemelhaum);
+   height: 30px;
+   display: flex;
+   align-items: center; 
+   justify-content: center; 
+   z-index: 1;
+   overflow: hidden;
+   border-radius: 10px;
+   text-transform: capitalize;
+   cursor: pointer;
+   width: 135px;
+   text-align: center;
+   transition: background-color 0.3s, transform 0.3s;
+}
+
+.compre21:hover
+{
+   background-color: var(--vermelhobotao);
+   transform: scale(1.05);
+}
+.VALORP21
+{
+   color: #f2f2f2;
+   font-size: 13px;
+  position: relative;
+  top: 210px;
+   text-align: center;
+   font-family:Verdana, Geneva, Tahoma, sans-serif
+}    
+.parcelas21
+{
+   color: #f2f2f2;
+   font-size: 8px;
+  position: relative;
+  top: 219px;
+   text-align: center;
+   font-family:Verdana, Geneva, Tahoma, sans-serif
+} 
+.cardimage21
+{
+   position: absolute;
+   width: 135px;
+   top: 32%;
+   left: 50%;
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+border-radius: 8px;
+   transform: translate(-50%, -50%);
+   transition: transform 0.3s; 
+}       
+.cardimage21:hover    
+{
+   transform: translate(-50%, -50%) scale(1.2);
+}     
+.card22
+{
+  position: absolute;
+  width: 250px;
+  height: 340px;
+  left:22.5%;
+  top: 325%;
+  background-image: radial-gradient(var(--azulsecundario), var(--azulgrade));
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.card22:hover 
+{
+  transform: scale(1.05);
+}
+
+.card-content22
+{
+  padding: 20px;
+}
+
+.card-title22
+{
+  font-size: 24px;
+  margin: 0;
+  top:200px;
+  text-align: center;
+}
+
+.card-text22
+{
+  color: #f2f2f2;
+  font-size: 24px;
+ position: relative;
+ top: 197.2px;
+  text-align: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.card-text22 p 
+{
+  align-self: flex-end; 
+  text-align: center;
+}
+.card-text22
+{
+  text-align: center;
+  color: var(--branco);
+  font-size: 15px;
+  top: 200.5px;
+  position: relative;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+}
+.compre22
+{
+  position: absolute;   
+  top: 85%;
+  left: 22%;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #FFFFFF;
+  text-decoration: none;
+  background-color: var(--vemelhaum);
+  height: 30px;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 10px;
+  text-transform: capitalize;
+  cursor: pointer;
+  width: 135px;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.compre22:hover
+{
+  background-color: var(--vermelhobotao);
+  transform: scale(1.05);
+}
+.VALORP22
+{
+  color: #f2f2f2;
+  font-size: 13px;
+ position: relative;
+ top: 210px;
+  text-align: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}    
+.parcelas22
+{
+  color: #f2f2f2;
+  font-size: 8px;
+ position: relative;
+ top: 219px;
+  text-align: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+} 
+.cardimage22
+{
+  position: absolute;
+  width: 135px;
+  top: 32%;
+  left: 50%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+border-radius: 8px;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s; 
+}       
+.cardimage22:hover    
+{
+  transform: translate(-50%, -50%) scale(1.2);
+}       
+
+.card23
+{
+   position: absolute;
+   width: 250px;
+   height: 340px;
+   left:41.8%;
+   top: 325%;
+   background-image: radial-gradient(var(--azulsecundario), var(--azulgrade));
+   border-radius: 10px;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+   overflow: hidden;
+   transition: transform 0.3s ease;
+}
+.card23:hover 
+{
+   transform: scale(1.05);
+}
+
+.card-content23
+{
+   padding: 20px;
+ }
+
+.card-title23
+{
+   font-size: 24px;
+   margin: 0;
+   top:200px;
+   text-align: center;
+}
+
+.card-text23
+{
+   color: #f2f2f2;
+   font-size: 24px;
+  position: relative;
+  top: 197.2px;
+   text-align: center;
+   font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.card-text23 p 
+{
+   align-self: flex-end; 
+   text-align: center;
+}
+.card-text23
+{
+   text-align: center;
+   color: var(--branco);
+   font-size: 15px;
+   top: 200.5px;
+   position: relative;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   font-weight: lighter;
+}
+.compre23
+{
+   position: absolute;   
+   top: 85%;
+   left: 22%;
+   font-size: large;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   color: #FFFFFF;
+   text-decoration: none;
+   background-color: var(--vemelhaum);
+   height: 30px;
+   display: flex;
+   align-items: center; 
+   justify-content: center; 
+   z-index: 1;
+   overflow: hidden;
+   border-radius: 10px;
+   text-transform: capitalize;
+   cursor: pointer;
+   width: 135px;
+   text-align: center;
+   transition: background-color 0.3s, transform 0.3s;
+}
+
+.compre23:hover
+{
+   background-color: var(--vermelhobotao);
+   transform: scale(1.05);
+}
+.VALORP23
+{
+   color: #f2f2f2;
+   font-size: 13px;
+  position: relative;
+  top: 210px;
+   text-align: center;
+   font-family:Verdana, Geneva, Tahoma, sans-serif
+}    
+.parcelas23
+{
+   color: #f2f2f2;
+   font-size: 8px;
+  position: relative;
+  top: 219px;
+   text-align: center;
+   font-family:Verdana, Geneva, Tahoma, sans-serif
+} 
+.cardimage23
+{
+   position: absolute;
+   width: 135px;
+   top: 32%;
+   left: 50%;
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+border-radius: 8px;
+   transform: translate(-50%, -50%);
+   transition: transform 0.3s; 
+}       
+.cardimage23:hover    
+{
+   transform: translate(-50%, -50%) scale(1.2);
+}     
+.card24
+{
+   position: absolute;
+   width: 250px;
+   height: 340px;
+   left: 61%;
+   top: 325%;
+   background-image: radial-gradient(var(--azulsecundario), var(--azulgrade));
+   border-radius: 10px;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+   overflow: hidden;
+   transition: transform 0.3s ease;
+}
+.card24:hover 
+{
+   transform: scale(1.05);
+}
+
+.card-content24
+{
+   padding: 20px;
+ }
+
+.card-title24
+{
+   font-size: 24px;
+   margin: 0;
+   top:200px;
+   text-align: center;
+}
+
+.card-text24
+{
+   color: #f2f2f2;
+   font-size: 24px;
+  position: relative;
+  top: 197.2px;
+   text-align: center;
+   font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.card-text24 p 
+{
+   align-self: flex-end; 
+   text-align: center;
+}
+.card-text24
+{
+   text-align: center;
+   color: var(--branco);
+   font-size: 15px;
+   top: 200.5px;
+   position: relative;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   font-weight: lighter;
+}
+.compre24
+{
+   position: absolute;   
+   top: 85%;
+   left: 22%;
+   font-size: large;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   color: #FFFFFF;
+   text-decoration: none;
+   background-color: var(--vemelhaum);
+   height: 30px;
+   display: flex;
+   align-items: center; 
+   justify-content: center; 
+   z-index: 1;
+   overflow: hidden;
+   border-radius: 10px;
+   text-transform: capitalize;
+   cursor: pointer;
+   width: 135px;
+   text-align: center;
+   transition: background-color 0.3s, transform 0.3s;
+}
+
+.compre24:hover
+{
+   background-color: var(--vermelhobotao);
+   transform: scale(1.05);
+}
+.VALORP24
+{
+   color: #f2f2f2;
+   font-size: 13px;
+  position: relative;
+  top: 210px;
+   text-align: center;
+   font-family:Verdana, Geneva, Tahoma, sans-serif
+}    
+.parcelas24
+{
+   color: #f2f2f2;
+   font-size: 8px;
+  position: relative;
+  top: 219px;
+   text-align: center;
+   font-family:Verdana, Geneva, Tahoma, sans-serif
+} 
+.cardimage24
+{
+   position: absolute;
+   width: 135px;
+   top: 32%;
+   left: 50%;
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+border-radius: 8px;
+   transform: translate(-50%, -50%);
+   transition: transform 0.3s; 
+}       
+.cardimage24:hover    
+{
+   transform: translate(-50%, -50%) scale(1.2);
+}     
+
+.card25
+{
+  position: absolute;
+  width: 250px;
+  height: 340px;
+  left: 80.5%;
+  top: 325%;
+  background-image: radial-gradient(var(--azulsecundario), var(--azulgrade));
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.card25:hover 
+{
+  transform: scale(1.05);
+}
+
+.card-content25
+{
+  padding: 20px;
+}
+
+.card-title25
+{
+  font-size: 24px;
+  margin: 0;
+  top:200px;
+  text-align: center;
+}
+
+.card-text25
+{
+  color: #f2f2f2;
+  font-size: 24px;
+ position: relative;
+ top: 197.2px;
+  text-align: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.card-text25 p 
+{
+  align-self: flex-end; 
+  text-align: center;
+}
+.card-text25
+{
+  text-align: center;
+  color: var(--branco);
+  font-size: 15px;
+  top: 200.5px;
+  position: relative;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+}
+.compre25
+{
+  position: absolute;   
+  top: 85%;
+  left: 22%;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #FFFFFF;
+  text-decoration: none;
+  background-color: var(--vemelhaum);
+  height: 30px;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 10px;
+  text-transform: capitalize;
+  cursor: pointer;
+  width: 135px;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.compre25:hover
+{
+  background-color: var(--vermelhobotao);
+  transform: scale(1.05);
+}
+.VALORP25
+{
+  color: #f2f2f2;
+  font-size: 13px;
+ position: relative;
+ top: 210px;
+  text-align: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}    
+.parcelas25
+{
+  color: #f2f2f2;
+  font-size: 8px;
+ position: relative;
+ top: 219px;
+  text-align: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+} 
+.cardimage25
+{
+  position: absolute;
+  width: 135px;
+  top: 32%;
+  left: 50%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+border-radius: 8px;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s; 
+}       
+.cardimage25:hover    
+{
+  transform: translate(-50%, -50%) scale(1.2);
+}        
+
+/* footer meio */
+
+.footermeiow
+    {
+        position: relative;
+        top:1050% ;
+        width: 100%;
+      
+    }
+ 
+.container_logospiderfooter
+    {
+        position: absolute;
+        left: 70%;
+        width: 17%;
+        padding-top: 184%;
+    }
+.spidermanbox
+    {
+        position: absolute;
+        left: 5%;
+        width: 23%;
+        padding-top: 173%;
+    }
+.textofooter
+     {
+        position: absolute;
+        top: 394%;
+        width: 38%;
+        left: 30%;
+     }   	
+.pontacabeça   
+     {
+        position: absolute;
+        top:383% ;
+        width: 180px;
+        left: 88%;
+     }
+  /* objetos após o footer do meio */
+
+  
+ .QUADRINHOS
+     {
+        position: absolute;
+        width: 550px;
+        height: 340px;
+        left: 2.5%;
+        top: 430%;
+        background-image: radial-gradient(var(--vermelho), var(--vermelhobotao));
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease;
+     }
+ .QUADRINHOS:hover
+    {
+        transform: scale(1.05);         
+    }     
+.TEXTOQUADRINHOS
+    {
+     color: #f2f2f2;
+     font-size: 24px;
+     position :relative;
+     top: 197.2px;
+      text-align: center;
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+     text-shadow: #000000;
+  
+    }
+.cardimagem
+    {
+        position: absolute;
+        width: 135px;
+        top: 32%;
+        left: 50%;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+        transform: translate(-50%, -50%);
+        transition: transform 0.3s
+    }
+.cardimagem
+    {
+        transform: translate(-50%, -50%) scale(1.2);
+    }    
+    .search-bar2 {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        background-color: #f2f2f2;
+        border-radius: 5px;
+        padding: 5px;
+        width: 420px;
+        left: 6.8%;
+        top: 468%;
+       
+        transition: transform 0.3s
+      }
+      
+    .search-bar2 input
+         {
+              flex: 7;
+             border: none;
+              outline: none;
+              background: transparent;
+              width: 7px;
+         }    
+.comicsler
+    {
+        position: absolute;
+        width: 750px;
+        top: 425%;
+        left: 45%;
+    }    
+.linhona
+    {
+        position: absolute;
+        width: 750px;
+        top: 445%;
+        left: 45%;
+    }
+ 
+.retangulofooter
+    {
+        position: absolute;
+        bottom: 0;
+        top: 500%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1500px;
+        height: auto
+       
+    }    
+.textoww
+    {
+        position: absolute;
+        bottom: 0;
+        top: 504%;
+        left: 23%;
+        transform: translateX(-50%);
+        width: 600px;
+        height: auto
+       
+        
+    }
+.logotextow
+    {
+        position: absolute;
+        bottom: 0;
+        top: 504%;
+        left: 70%;
+        transform: translateX(-50%);
+        width: 600px;
+        height: auto
+       
+    } 
+.pagamento
+    {
+        font-family: var(re);
+        font-weight: bolder;
+        font-size: xx-large;
+        color: var(--branco);
+        position: absolute;
+        bottom: 0;
+        top: 530%;
+        left: 59%;
+        transform: translateX(-50%);
+        width: 500px;
+        height: auto;
+        cursor: pointer;
+        font-family: var(--reboto);
+    }
+.boleto
+    {
+        position: absolute;
+        bottom: 0;
+        top: 540%;
+        left: 45%;
+        transform: translateX(-50%);
+        width: 110px;
+        cursor: pointer;
+       
+    }    
+.visa
+    {
+        position: absolute;
+        bottom: 0;
+        top: 540%;
+        left: 55%;
+        transform: translateX(-50%);
+        width: 110px;
+        cursor: pointer;
+        
+    }  
+.pix
+    {
+        position: absolute;
+        bottom: 0;
+        top: 540%;
+        left: 65%;
+        transform: translateX(-50%);
+        width: 110px;
+        cursor: pointer;
+     
+    }  
+.debito
+    {
+        position: absolute;
+        bottom: 0;
+        top: 540%;
+        left: 75%;
+        transform: translateX(-50%);
+        width: 110px;
+        cursor: pointer;
+        
+     
+    }      
+.posefinal
+    {
+        position: absolute;
+        bottom: 0;
+        top: 528%;
+        left: 90%;
+        transform: translateX(-50%);
+        width: 300px;    
+        
+
+    }
+.help   
+    {
+        position: absolute;
+        bottom: 0;
+        top: 537%;
+        left: 18%;
+        transform: translateX(-50%);
+        width: 160px;
+        cursor: pointer; 
+    
+    
+    }
+.fale
+    {
+        position: absolute;
+        bottom: 0;
+        top: 543%;
+        left: 18%;
+        transform: translateX(-50%);
+        width: 149px;
+        cursor: pointer;
+    }    
+
+.privacidade
+    {
+        position: absolute;
+        bottom: 0;
+        top: 546%;
+        left: 18%;
+        transform: translateX(-50%);
+        width: 210px;
+        cursor: pointer;
+    }    
+.linha
+    {
+        position: absolute;
+        bottom: 0;
+        top: 554%;
+        left: 18%;
+        transform: translateX(-50%);
+        width: 300px;
+        cursor: pointer;
+    }    
+.news
+    {
+        position: absolute;
+        bottom: 0;
+        top: 570%;
+        left: 23%;
+        transform: translateX(-50%);
+        width: 650px;
+        cursor: pointer;
+    }    
+.frequentes
+    {
+        position: absolute;
+        bottom: 0;
+        top: 550%;
+        left: 18%;
+        transform: translateX(-50%);
+        width: 200px;
+        cursor: pointer;
+    }
+    .search-bar3 {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        background-color: #f2f2f2;
+        border-radius: 5px;
+        padding: 5px;
+        width: 600px;
+        left: 2%;
+        top: 580%;
+        transition: transform 0.3s
+      }
+      
+.search-bar3 input
+         {
+            flex: 1;
+            border: none;
+            outline: none;
+            background: transparent;
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+  }  
+  .search-bar3 input:focus
+     {
+         border: 2px solid var(--vermelhobotao);
+         box-shadow: 0 0 5px rgba(255, 0, 25, 0.5); 
+     }         
